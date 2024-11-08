@@ -1,0 +1,95 @@
+.slider-container {
+  display: flex;
+  align-items: center;
+  
+  margin-bottom: 20px; /* Increase spacing */
+}
+
+.slider {
+  width: 300px; /* Increase width */
+  height: 8px; /* Adjust height */
+  
+  background-color: #ddf; /* Light gray background */
+  border-radius: 4px; /* Rounded corners */
+  -webkit-appearance: none; /* Remove default styles for WebKit browsers */
+  appearance: none; /* Remove default styles */
+  outline: none; /* Remove outline */
+  margin-right: 20px; /* Increase spacing */
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Remove default styles for WebKit browsers */
+  appearance: none; /* Remove default styles */
+  width: 20px; /* Thumb width */
+  height: 20px; /* Thumb height */
+  background-color: #bbf; /* Blue thumb color */
+  border-radius: 50%; /* Circle shape */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+.slider::-moz-range-thumb {
+  width: 20px; /* Thumb width */
+  height: 20px; /* Thumb height */
+  background-color: #bbf; /* Blue thumb color */
+  border: none; /* Remove border */
+  border-radius: 50%; /* Circle shape */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+
+.pdf-container {
+  overflow-x: auto; /* Enable horizontal scrolling */
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  white-space: nowrap; /* Prevent page wrapping */
+}
+
+.pdf-page {
+  height:50%;
+  display: inline-block; /* Display pages inline */
+  margin-right: 10px; /* Adjust spacing between pages */
+}
+.file-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #bbf;
+  color: white;
+  padding: 12px 24px; /* Increase padding for better touch target */
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.file-label:hover {
+  background-color: #bbf;
+}
+
+.file-label:hover svg {
+  fill: white;
+}
+
+.file-label:active {
+  transform: translateY(1px);
+}
+
+.file-label:focus-within {
+  box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.5);
+}
+
+.file-icon {
+  margin-right: 8px;
+  transition: transform 0.2s ease; /* Add icon animation */
+}
+
+.file-label:hover .file-icon {
+  transform: scale(1.1); /* Increase icon size on hover */
+}
+
+.file-text {
+  font-family: "helvetica";
+  margin-right: 8px;
+}
+
+.file-input {
+  display: none;
+}

@@ -1,0 +1,35 @@
+.liquid-architecture-container {
+  width: 100%;
+  height: 1000px; /* Adjust height as needed */
+  background-color: #ddf; /* Light blue background color */
+  position: relative;
+  overflow: hidden;
+}
+.liquid-layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.liquid {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(270deg, #bbf, #ddf); /* Gradient for fluid color */
+  animation: wave 10s infinite alternate;
+}
+
+@keyframes wave {
+  0% {
+    transform: skewX(90deg) scaleY(1);
+  }
+  50% {
+    transform: skewX(-90deg) scaleY(1.2);
+  }
+  100% {
+    transform: skewX(90deg) scaleY(1);
+  }
+}
+.hello-world {
+  position: absolute;
+}
